@@ -1,1 +1,127 @@
 // Normally mainpage styles
+.out
+	background-image: linear-gradient(to top, #7d2c72 0%, #c179ab 33%, #b674a9 66%, #2aa3e7 100%)
+.top
+	position: relative
+	background-color: #9eb6d4 
+	background: url(../img/top-bg.png) no-repeat top center
+	// background-size: cover
+	min-height: 884px
+.inner
+	max-width: 980px
+	padding: 70px 20px 0
+	width: 100%
+	margin: auto
+.top__pic
+	text-align: center
+	+hide-text
+	img
+		display: inline-block
+.go-in
+	padding: 18px 19px
+	background-color: #b7176e
+	border-radius: 3px
+	margin: auto
+	position: relative
+	margin-top: 29px
+	max-width: 620px
+	.row
+		font-size: 0
+	[class^="col"],
+	[class*="col"]
+		display: inline-block
+		vertical-align: top
+	.col1 
+		padding-right: 18px
+		width: 78%
+		+r(1024)
+			width: 65%
+		+r(450)
+			width: 100%
+			padding-right: 0
+			margin-bottom: 10px
+	.col2
+		width: 22%
+		+r(1024)
+			width: 35%
+		+r(450)
+			width: 100%
+	.btn 
+		text-transform: uppercase
+		background-color: $blue
+		width: 100%
+.mail-form-wrp
+	position: absolute
+	right: 14px
+.mail-form
+	width: 200px
+	height: 172px
+	padding: 15px 10px 20px
+	text-align: center
+	background-color: $magenta2
+	border-radius: 5px
+	z-index: 9900
+	right: 14px
+	opacity: 0
+	&.is-active
+		opacity: 1
+		+tr(opacity .4s ease)
+	// +r(1420)
+	// 	display: none
+	.mail-form__top
+		+proxima-regular
+		font-size: 11px
+		color: #fff
+		text-align: center
+		margin-bottom: 18px
+	.input-text
+		font-size: 13px
+		+proxima-regular
+		margin-bottom: 18px
+	.btn
+		background-color: #3d0122
+		+proxima-bold
+		width: 115px
+.spoof
+	position: relative
+	font-size: 0
+	text-align: center
+	.spoof__in
+		margin: auto
+		max-width: 990px
+		padding: 43px 20px 55px
+	.btn-buy
+		margin: 81px 0 92px
+.spoof__title
+	font: 700 58px "Arial Bold", sans-serif
+	color: $magenta
+	text-transform: uppercase
+	margin-bottom: -78px
+	+r(1024)
+		font-size: 47px
+	+r(900)
+		font-size: 40px
+	+r(400)
+		font-size: 32px
+	span
+		color: #fdfdfd
+		display: block
+		text-transform: lowercase
+		margin-top: 5px
+.spoof__pic
+	position: relative
+.spoof__bottom
+	position: relative
+	text-align: center
+	font-size: 35px
+	color: #fdfdfd
+	line-height: 1
+	max-width: 840px
+	margin: -170px auto 49px
+	+bold
+	span
+		font-size: 40px
+		color: $magenta
+	
+
+
