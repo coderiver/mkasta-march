@@ -145,7 +145,7 @@
 			padding: 15px 0
 		+r(500)
 			text-align: left
-		.time-b__circle
+		.time-b__item
 			+r(1100)
 				display: inline-block
 .share
@@ -166,7 +166,11 @@
 	border-radius: 10px
 	margin: auto
 	text-align: left
-	padding: 44px 58px
+	padding: 15px 20px
+	&.logos_bg-first
+		background: url(../img/logos-bg.png) repeat center 
+	&.logos_bg-second
+		background: url(../img/logos-bg2.png) repeat center 
 	+r(900)
 		padding: 25px
 	+r(790)
@@ -174,14 +178,21 @@
 	+r(600)
 		padding: 15px
 .logos__top
-	color: #b7176e
+	color: #fff
 	+bold
-	font-size: 40px
-	text-transform: uppercase
-	padding: 20px 0 18px
+	font-size: 25px
 	margin-bottom: 20px
-	position: relative
+	position: absolute
 	text-align: center
+	display: inline-block
+	width: 130px
+	height: 165px
+	z-index: 1
+	padding: 15px 10px
+	letter-spacing: -0.01em 
+	background: url(../img/logos-top.png) no-repeat center top 
+	top: 0
+	left: 60px
 	+r(1024)
 		font-size: 35px
 	+r(790)
@@ -195,17 +206,6 @@
 		font-size: 20px
 	+r(340)
 		font-size: 18px
-	&:after
-		content: ' '
-		display: block
-		position: absolute
-		z-index: 1
-		background: url(../img/line.png) no-repeat center
-		bottom: 0
-		left: 0
-		right: 0
-		width: 100%
-		height: 5px
 	
 .bottom
 	position: relative
