@@ -132,15 +132,17 @@
 	position: relative
 	.time-b
 		position: absolute
-		top: 144px
-		left: -43px
+		top: 87px
+		right: 100%
+		margin-right: -19px
 		+r(1100)
 			display: block
 			position: relative
 			padding: 30px 0
 			text-align: center
-			top: inherit
-			left: inherit
+			top: auto
+			right: auto
+			margin-right: auto
 		+r(700)
 			padding: 15px 0
 		+r(500)
@@ -166,17 +168,32 @@
 	border-radius: 10px
 	margin: auto
 	text-align: left
-	padding: 15px 20px
+	padding: 178px 35px 37px
+	text-align: center
+	position: relative
+	&:before
+		+rm(900)
+			content: ' '
+			display: block
+			position: absolute
+			top: 15px
+			bottom: 15px
+			left: 20px
+			right: 20px
+			border: 3px dotted #b30a66
+			border-radius: 10px
 	&.logos_bg-first
 		background: url(../img/logos-bg.png) repeat center 
 	&.logos_bg-second
 		background: url(../img/logos-bg2.png) repeat center 
-	+r(900)
-		padding: 25px
-	+r(790)
-		padding: 30px 25px
-	+r(600)
-		padding: 15px
+	+r(800)
+		padding: 30px 20px
+	// +r(900)
+	// 	padding: 25px
+	// +r(790)
+	// 	padding: 30px 25px
+	// +r(600)
+	// 	padding: 15px
 .logos__top
 	color: #fff
 	+bold
@@ -194,18 +211,18 @@
 	top: 0
 	left: 60px
 	+r(1024)
-		font-size: 35px
-	+r(790)
-		font-size: 32px
-		padding-top: 0
-	+r(600)
-		font-size: 28px
-	+r(500)
 		font-size: 22px
-	+r(380)
-		font-size: 20px
-	+r(340)
-		font-size: 18px
+		padding: 15px
+	+r(900)
+		left: 0
+		right: 0
+		margin: auto
+		max-width: 300px
+		width: 100%
+		height: 50px
+		background: $magenta
+		top: auto
+		bottom: 100%
 	
 .bottom
 	position: relative
