@@ -66,8 +66,6 @@
 	&.is-active
 		opacity: 1
 		+tr(opacity .4s ease)
-	// +r(1420)
-	// 	display: none
 	.mail-form__top
 		+proxima-regular
 		font-size: 11px
@@ -97,6 +95,8 @@
 	color: $magenta
 	text-transform: uppercase
 	margin-bottom: -78px
+	position: relative
+	z-index: 1
 	+r(1024)
 		font-size: 47px
 	+r(900)
@@ -118,10 +118,103 @@
 	line-height: 1
 	max-width: 840px
 	margin: -170px auto 49px
+	position: relative
+	z-index: 1
 	+bold
 	span
 		font-size: 40px
 		color: $magenta
+		
+
+
+
+.share-wrp
+	position: relative
+	.time-b
+		position: absolute
+		top: 144px
+		left: -43px
+		+r(1100)
+			display: block
+			position: relative
+			padding: 30px 0
+			text-align: center
+			top: inherit
+			left: inherit
+		+r(700)
+			padding: 15px 0
+		+r(500)
+			text-align: left
+		.time-b__circle
+			+r(1100)
+				display: inline-block
+.share
+	position: relative
+	.share__in
+		max-width: 980px
+		margin: auto
+		padding: 0 20px 137px
+		+r(1024)
+			padding-bottom: 50px
+		&.share__in_no-space
+			padding-bottom: 0
+.logos-wrp
+	position: relative
+.logos
+	max-width: 940px
+	background-color: white
+	border-radius: 10px
+	margin: auto
+	text-align: left
+	padding: 44px 58px
+	+r(900)
+		padding: 25px
+	+r(790)
+		padding: 30px 25px
+	+r(600)
+		padding: 15px
+.logos__top
+	color: #b7176e
+	+bold
+	font-size: 40px
+	text-transform: uppercase
+	padding: 20px 0 18px
+	margin-bottom: 20px
+	position: relative
+	text-align: center
+	+r(1024)
+		font-size: 35px
+	+r(790)
+		font-size: 32px
+		padding-top: 0
+	+r(600)
+		font-size: 28px
+	+r(500)
+		font-size: 22px
+	+r(380)
+		font-size: 20px
+	+r(340)
+		font-size: 18px
+	&:after
+		content: ' '
+		display: block
+		position: absolute
+		z-index: 1
+		background: url(../img/line.png) no-repeat center
+		bottom: 0
+		left: 0
+		right: 0
+		width: 100%
+		height: 5px
 	
+.bottom
+	position: relative
+	.btn-main
+		display: block
+		margin: 174px auto 70px
 
-
+@keyframes show 
+	0%
+		opacity: 0
+	100%
+		opacity: 1

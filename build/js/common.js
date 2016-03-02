@@ -1,4 +1,12 @@
 $(document).ready(function() {
+	$('.js-time a').on('click', function(e) {
+		e.preventDefault();
+		var section = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(section).offset().top - 30
+		}, 500);
+		return false;
+	});
 	// social fixed
 	function stickySocial() {
 		if ($('.js-sticky').length) { 

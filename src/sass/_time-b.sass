@@ -1,0 +1,37 @@
+.time-b
+	display: inline-block
+	font-size: 0
+	.time-b__container
+		+r(1100)
+			margin: 0 -1%
+	.time-b__item
+		display: block
+		text-align: center
+		background: url(../img/time-b-flower1.png) no-repeat center
+		width: 70px
+		height: 71px
+		line-height: 71px
+		margin-bottom: 6px
+		cursor: pointer
+		position: relative
+		+r(1100)
+			margin: 0 1%
+			border-radius: 0
+			width: 18%
+		+r(700)
+			height: 40px
+			line-height: 40px
+		+r(500)
+			width: 31%
+			margin-bottom: 10px
+		&:nth-child(even)
+			background: url(../img/time-b-flower2.png) no-repeat center
+		&:active
+			top: 1px
+		span 
+			font-size: 12px
+			color: #fff
+			+bold
+			display: inline-block
+			+r(1100)
+				font-size: 18px
