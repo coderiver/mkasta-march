@@ -281,7 +281,8 @@ header { width: 100%; height: 60px; background: #000000; }
  .go-in .col1{ width: 65%; }
  .go-in .col2{ width: 35%; }
  .spoof__title{ font-size: 47px; }
- .logos__top{ font-size: 22px; padding: 15px; } }
+ .logos__top{ font-size: 22px; padding: 15px; }
+ .bottom .btn-main{ margin: 100px auto; } }
 @media (max-width: 1024px){
  .footer__top-content{ width: 100%; }
  .container, .footer__bottom{ width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-box-sizing: border-box; -webit-box-sizing: border-box; }
