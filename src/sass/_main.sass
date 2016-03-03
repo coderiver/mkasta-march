@@ -104,6 +104,8 @@
 		margin: auto
 		max-width: 990px
 		padding: 22px 20px 55px
+		+r(900)
+			padding-bottom: 105px
 	.btn-buy
 		margin: 81px 0 92px
 .spoof__title
@@ -122,8 +124,9 @@
 		font-size: 35px
 	+r(624)
 		font-size: 30px
+		margin-bottom: 0
 	+r(400)
-		font-size: 32px
+		font-size: 26px
 	span
 		color: #fdfdfd
 		display: block
@@ -134,8 +137,12 @@
 	margin-bottom: -183px
 	+r(900)
 		margin-bottom: -90px
-	+r(640)
+	+r(700)
 		margin-bottom: -60px
+	+r(550)
+		margin-bottom: -30px
+	+r(500)
+		margin-bottom: -10px
 .spoof__unit
 	display: inline-block
 	font-size: 40px
@@ -144,6 +151,10 @@
 		font-size: 32px
 	+r(680)
 		font-size: 26px
+	+r(400)
+		font-size: 24px
+	+r(350)
+		font-size: 22px
 .spoof__bottom
 	position: relative
 	text-align: center
@@ -159,14 +170,9 @@
 		font-size: 30px
 	+r(680)
 		font-size: 24px
-	// span
-	// 	font-size: 40px
-	// 	color: $magenta
-	// 	+r(900)
-	// 		font-size: 32px
-	// 	+r(670)
-	// 		font-size: 26px
-		
+	+r(350)
+		font-size: 22px
+
 
 
 
@@ -198,8 +204,6 @@
 		max-width: 980px
 		margin: auto
 		padding: 0 20px 137px
-		+r(1024)
-			padding-bottom: 50px
 		&.share__in_no-space
 			padding-bottom: 0
 .logos-wrp
@@ -228,7 +232,7 @@
 		background: url(../img/logos-bg.png) repeat center 
 	&.logos_bg-second
 		background: url(../img/logos-bg2.png) repeat center 
-	+r(800)
+	+r(900)
 		padding: 30px 20px
 	// +r(900)
 	// 	padding: 25px
@@ -265,12 +269,14 @@
 		background: $magenta
 		top: auto
 		bottom: 100%
+	+r(450)
+		font-size: 21px
 	
 .bottom
 	position: relative
 	.btn-main
 		display: block
-		margin: 174px auto 70px
+		margin: 173px auto 173px
 
 @keyframes show 
 	0%
