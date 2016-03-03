@@ -116,21 +116,29 @@ img
 	display: inline-block
 	color: $magenta
 	font-size: 100px
+	+r(900)
+		font-size: 70px
+	+r(680)
+		font-size: 50px
+	+r(550)
+		font-size: 26px
 .number_pic1, .number_pic2
 	position: relative
 	line-height: 1
 	&:after
-		content: ' '
-		display: block
-		position: absolute
-		top: 0
-		left: 0
-		right: 0
-		bottom: 0
-		margin: auto
-		background: url(../img/number-fl1.png) no-repeat center top
-		background-size: contain
-		z-index: 1
+		+rm(550)
+			content: ' '
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			margin: auto
+			background: url(../img/number-fl1.png) no-repeat center top
+			background-size: contain
+			z-index: 1
 .number_pic2:after
-	background: url(../img/number-fl2.png) no-repeat center top
-	background-size: contain
+	+rm(550)
+		background: url(../img/number-fl2.png) no-repeat center top
+		background-size: contain
